@@ -1,0 +1,44 @@
+name: Update calendar
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    paths: ["build_ics.py", ".github/workflows/update.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: calendar
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Build calendar
+        env:
+          SHEET_URL: ${{ secrets.SHEET_URL }}
+          SECTIONS: "S2,S4"
+          TZ_NAME: "Asia/Kolkata"
+          CAL_NAME: "MICA Classes (S2, S4)"
+        run: python build_ics.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add docs/calendar.ics
+          if git diff --cached --quiet; then
+            echo "No timetable changes."
+          else
+            git commit -m "Timetable updated $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
