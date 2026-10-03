@@ -111,6 +111,8 @@ def parse_times(v):
             return start, end
         start = _fix(*tms[0])
         end = _fix(*tms[1]) if len(tms) > 1 else None
+        if end and end <= start and end.hour + 12 < 24:   # '7.00-8.15' evening -> 19:00-20:15
+            end = dt.time(end.hour + 12, end.minute)
         return start, end
     except ValueError:
         return None, None
@@ -192,25 +194,85 @@ def parse_list(grid, h, cols, year):
             "faculty": clean(g("faculty")), "room": clean(g("room")), "session": clean(g("session"))}))
     return events
 
-def parse_grid(grid, h, date_col, year):
-    header = grid[h]
-    slots = {j: parse_times(c) for j, c in enumerate(header) if j != date_col}
-    slots = {j: t for j, t in slots.items() if t[0]}
+def find_slot_row(grid, h, date_col):
+    """Time slots may be on the header row or a few rows above it; pick the row with the most."""
+    best, best_n = h, -1
+    for i in range(h, max(-1, h - 4), -1):
+        n = sum(1 for j, c in enumerate(grid[i]) if j != date_col and parse_times(c)[0])
+        if n > best_n:
+            best, best_n = i, n
+    return best
+
+def bump_evening(slots):
+    """Make slot start times increase left to right: '9.00-10.15' after '7.00-8.15' PM is 9 PM."""
+    prev = None
+    for j in sorted(slots):
+        st, en = slots[j]
+        if prev and st < prev and st.hour + 12 < 24:
+            st = dt.time(st.hour + 12, st.minute)
+            if en and en.hour + 12 < 24 and en < st:
+                en = dt.time(en.hour + 12, en.minute)
+        slots[j] = (st, en)
+        prev = st
+    return slots
+
+CODE_RE = re.compile(r"^\s*(S\d+\s*-\s*C\d+\s*-\s*[^\s(]+)", re.I)
+
+def split_cell(txt):
+    """'S2-C1-CPB ( Darshan T) (1)' -> ('S2-C1-CPB', 'Darshan T', '1')"""
+    m = CODE_RE.match(txt)
+    if not m:
+        return None, "", ""
+    code = re.sub(r"\s+", "", m.group(1)).upper()
+    rest = txt[m.end():]
+    nums = re.findall(r"\d+", rest)
+    fac = re.sub(r"\s+", " ", re.sub(r"[()\d]", " ", rest)).strip(" -,")
+    return code, fac, (nums[-1] if nums else "")
+
+def parse_grid(grid, h, cols, year):
+    date_col = cols["date"]
+    room_col = cols.get("room")
+    sr = find_slot_row(grid, h, date_col)
+    slots = {j: parse_times(c) for j, c in enumerate(grid[sr]) if j != date_col and j != room_col}
+    slots = bump_evening({j: t for j, t in slots.items() if t[0]})
     events, last_date = [], None
     for row in grid[h + 1:]:
         d = to_date(row[date_col] if date_col < len(row) else None, year) or last_date
         if not d:
             continue
         last_date = d
+        room = clean(row[room_col]) if room_col is not None and room_col < len(row) else ""
         for j, (start, end) in slots.items():
             txt = clean(row[j]) if j < len(row) else ""
             sec = section_matches(txt)
-            if sec:
-                events.append(make_event(d, start, end, sec, txt, {}))
+            if not sec:
+                continue
+            code, fac, sess = split_cell(txt)
+            title = COURSE_NAMES.get(code, code or txt)
+            events.append(make_event(d, start, end, sec, title, {
+                "code": code or "", "faculty": fac, "session": sess, "room": room}))
     return events
+
+COURSE_NAMES = {}
+
+def load_course_names(sheets):
+    """Map 'S2-C1-CPB' -> 'Content & Platform Business (Projects)' from any course-list sheet."""
+    for grid in sheets.values():
+        name_col = abbr_col = None
+        for row in grid:
+            cells = [clean(c).lower() for c in row]
+            if "abbreviation" in cells and any("course" in c for c in cells):
+                abbr_col = cells.index("abbreviation")
+                name_col = next(i for i, c in enumerate(cells) if "course" in c)
+                continue
+            if abbr_col is not None and abbr_col < len(row):
+                code = re.sub(r"\s+", "", clean(row[abbr_col])).upper()
+                if CODE_RE.match(code) and clean(row[name_col]):
+                    COURSE_NAMES[code] = clean(row[name_col])
 
 def parse_workbook(sheets):
     year = dt.date.today().year
+    load_course_names(sheets)
     events = []
     for name, grid in sheets.items():
         h = find_header(grid)
@@ -221,15 +283,19 @@ def parse_workbook(sheets):
         if "section" in cols:
             ev = parse_list(grid, h, cols, year); mode = "list"
         else:
-            ev = parse_grid(grid, h, cols["date"], year); mode = "grid"
+            ev = parse_grid(grid, h, cols, year); mode = "grid"
         print(f"  sheet '{name}': {mode} layout, header row {h + 1}, {len(ev)} matching classes")
         events += ev
     # de-duplicate
-    seen, uniq = set(), []
+    seen, uniq = {}, []
     for e in sorted(events, key=lambda e: (e["date"], e["start"])):
-        k = (e["date"], e["start"], e["summary"].lower())
-        if k not in seen:
-            seen.add(k); uniq.append(e)
+        k = (e["date"], e["start"], (e.get("code") or e["summary"]).lower())
+        if k in seen:
+            first = seen[k]
+            if e.get("room") and e["room"] not in first.get("room", ""):
+                first["room"] = " / ".join(x for x in [first.get("room"), e["room"]] if x)
+            continue
+        seen[k] = e; uniq.append(e)
     return uniq
 
 # ---------------------------------------------------------------- ICS output
@@ -258,10 +324,11 @@ def build_ics(events):
         summary = f"[{secs}] {e['summary']}"
         desc = "\n".join(x for x in [
             f"Section: {secs}",
+            f"Code: {e['code']}" if e.get("code") else "",
             f"Session: {e['session']}" if e.get("session") else "",
             f"Faculty: {e['faculty']}" if e.get("faculty") else "",
         ] if x)
-        uid = hashlib.sha1(f"{e['date']}|{e['start']}|{e['summary'].lower()}".encode()).hexdigest()
+        uid = hashlib.sha1(f"{e['date']}|{e['start']}|{(e.get('code') or e['summary']).lower()}".encode()).hexdigest()
         start = utc(e["date"], e["start"])
         L += ["BEGIN:VEVENT", f"UID:{uid}@mica-ics-feed", f"DTSTAMP:{start}",
               f"DTSTART:{start}", f"DTEND:{utc(e['date'], e['end'])}", f"SUMMARY:{esc(summary)}"]
