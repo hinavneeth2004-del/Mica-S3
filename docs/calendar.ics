@@ -274,7 +274,8 @@ DTSTART:20261008T064500Z
 DTEND:20261008T080000Z
 SUMMARY:[S2] Content & Platform Business (Projects)
 LOCATION:Audi
-DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 9\nFaculty: Avinash M
+DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 9\nFaculty: Avinash M Au
+ di
 END:VEVENT
 BEGIN:VEVENT
 UID:82f68d31955a4d627aa996a11bb8216f7d3884f5@mica-ics-feed
@@ -283,7 +284,8 @@ DTSTART:20261008T084500Z
 DTEND:20261008T100000Z
 SUMMARY:[S2] Content & Platform Business (Projects)
 LOCATION:Audi
-DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 10\nFaculty: Avinash M
+DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 10\nFaculty: Avinash M A
+ udi
 END:VEVENT
 BEGIN:VEVENT
 UID:cf567b4931aaed061faf08137d0b8c8f8d52d0ab@mica-ics-feed
@@ -293,6 +295,7 @@ DTEND:20261008T113000Z
 SUMMARY:[S4] Distribution & Retail Landscape
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C1-DRL\nSession: 11\nFaculty: Siddharth A
+  Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:00fa350f07efeb0a72a2e5ab6f5d0c7fc7085b4d@mica-ics-feed
@@ -302,6 +305,7 @@ DTEND:20261008T131500Z
 SUMMARY:[S4] Distribution & Retail Landscape
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C1-DRL\nSession: 12\nFaculty: Siddharth A
+  Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:9dd2178ef92326c4f147c0157e2aac757fccbd98@mica-ics-feed
@@ -613,7 +617,7 @@ DTSTART:20261018T133000Z
 DTEND:20261018T144500Z
 SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 5
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 5\nFaculty: Shikha B
 END:VEVENT
 BEGIN:VEVENT
 UID:b940bfa546696459f617290bd5189a03de937e27@mica-ics-feed
@@ -622,7 +626,7 @@ DTSTART:20261018T153000Z
 DTEND:20261018T164500Z
 SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 6
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 6\nFaculty: Shikha B
 END:VEVENT
 BEGIN:VEVENT
 UID:9de3415868250e0358df79bf297dff6aeec9a351@mica-ics-feed
