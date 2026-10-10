@@ -355,7 +355,7 @@ DTEND:20261011T050000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:Audi
 DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 3\nFaculty: Ashish 
- P
+ P Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:0ccd4e0b0e79625639e894c02343360623d4f03f@mica-ics-feed
@@ -365,7 +365,7 @@ DTEND:20261011T063000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:Audi
 DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 4\nFaculty: Ashish 
- P
+ P Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:1d7ca02b614dde88f4b5d6159fb7d3ff98da817e@mica-ics-feed
@@ -415,7 +415,7 @@ DTEND:20261012T080000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:Audi
 DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 5\nFaculty: Ashish 
- P
+ P Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:b5ef02293dad2054e0c22292a67489b500c0a99c@mica-ics-feed
@@ -425,7 +425,7 @@ DTEND:20261012T100000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:Audi
 DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 6\nFaculty: Ashish 
- P
+ P Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:35d06c6719b4afcf8fd0d6661e6393d0aca15da0@mica-ics-feed
@@ -435,6 +435,7 @@ DTEND:20261012T113000Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 9\nFaculty: Priyaranjan K
+  Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:6dcfbcb9d6f1f816877f54177927bbd12aebcf8a@mica-ics-feed
@@ -444,7 +445,7 @@ DTEND:20261012T131500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 10\nFaculty: Priyaranjan 
- K
+ K Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:e67a620c8f7378c53efe23e6415fc99c5250c168@mica-ics-feed
