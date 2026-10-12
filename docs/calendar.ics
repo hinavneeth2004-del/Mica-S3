@@ -454,7 +454,8 @@ DTSTART:20261013T064500Z
 DTEND:20261013T080000Z
 SUMMARY:[S2] Content & Platform Business (Projects)
 LOCATION:Audi
-DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 11\nFaculty: Suresh B
+DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 11\nFaculty: Suresh B Au
+ di
 END:VEVENT
 BEGIN:VEVENT
 UID:afb2538121a3245024ee288ab0b9bee512e0205a@mica-ics-feed
@@ -463,7 +464,8 @@ DTSTART:20261013T084500Z
 DTEND:20261013T100000Z
 SUMMARY:[S2] Content & Platform Business (Projects)
 LOCATION:Audi
-DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 12\nFaculty: Suresh B
+DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 12\nFaculty: Suresh B Au
+ di
 END:VEVENT
 BEGIN:VEVENT
 UID:df5f3ae071a167b367a9862752cab50c1e4124e3@mica-ics-feed
@@ -473,7 +475,7 @@ DTEND:20261013T144500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 11\nFaculty: Priyaranjan 
- K
+ K Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:3442915da35be1fcde918327bb13eb5521cf1a26@mica-ics-feed
@@ -483,7 +485,7 @@ DTEND:20261013T164500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 12\nFaculty: Priyaranjan 
- K
+ K Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:b2460898b9d8931def9f3f218a96646198ef29af@mica-ics-feed
@@ -493,7 +495,7 @@ DTEND:20261014T144500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 13\nFaculty: Priyaranjan 
- K
+ K Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:37cfd2e28a0e0fa3e24774735765425498e29bbe@mica-ics-feed
@@ -503,7 +505,7 @@ DTEND:20261014T164500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
 DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 14\nFaculty: Priyaranjan 
- K
+ K Audi
 END:VEVENT
 BEGIN:VEVENT
 UID:63e4a3188b2ff0b6d6c92d334cb74606878abe40@mica-ics-feed
@@ -650,22 +652,24 @@ LOCATION:SH-2
 DESCRIPTION:Section: S4\nCode: S4-C3-RAS\nSession: 8\nFaculty: Khushboo B
 END:VEVENT
 BEGIN:VEVENT
-UID:71180d00879bd9542c5233723824dec28386497c@mica-ics-feed
+UID:374ed97705a71deb30bc53b136d5a18a68950ad2@mica-ics-feed
 DTSTAMP:20261021T101500Z
 DTSTART:20261021T101500Z
 DTEND:20261021T113000Z
-SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 1
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 7\nFaculty: Utkarsh D /K
+ aran Yadav
 END:VEVENT
 BEGIN:VEVENT
-UID:da84444213090132d56356e6da3fc7ddb1c10615@mica-ics-feed
+UID:3eb6cca2cd5c55541f8796e0d87f2f34ee349ad2@mica-ics-feed
 DTSTAMP:20261021T120000Z
 DTSTART:20261021T120000Z
 DTEND:20261021T131500Z
-SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 2
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 8\nFaculty: Utkarsh D /K
+ aran Yadav
 END:VEVENT
 BEGIN:VEVENT
 UID:abce7a627ce76cdf382a6a4c9f1c7b0ff5073a20@mica-ics-feed
@@ -858,7 +862,8 @@ DTSTART:20261029T034500Z
 DTEND:20261029T050000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 11
+DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 7\nFaculty: Avinash
+  M
 END:VEVENT
 BEGIN:VEVENT
 UID:f1a5593ecac2388772553aac976a945228d32f45@mica-ics-feed
@@ -867,25 +872,28 @@ DTSTART:20261029T051500Z
 DTEND:20261029T063000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 12
+DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 8\nFaculty: Avinash
+  M
 END:VEVENT
 BEGIN:VEVENT
-UID:015f9b1ab3da2b2554bfd1d758b12e06468d4681@mica-ics-feed
+UID:88b83b25995d4d09f1a2e2933898999d7eaf8502@mica-ics-feed
 DTSTAMP:20261029T064500Z
 DTSTART:20261029T064500Z
 DTEND:20261029T080000Z
-SUMMARY:[S2] Gaming & Immersive Media Businesses
+SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 1
+DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 9\nFaculty: Avinash
+  M
 END:VEVENT
 BEGIN:VEVENT
-UID:dbb40363eb86e1689921352171a54268257d7c41@mica-ics-feed
+UID:e92502d1cc16d979ed92f303b743823e8faf904b@mica-ics-feed
 DTSTAMP:20261029T084500Z
 DTSTART:20261029T084500Z
 DTEND:20261029T100000Z
-SUMMARY:[S2] Gaming & Immersive Media Businesses
+SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 2
+DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 10\nFaculty: Avinas
+ h M
 END:VEVENT
 BEGIN:VEVENT
 UID:7ccdadc6a5a1287acc28e2a5c2ab63ddc30ece0e@mica-ics-feed
@@ -924,22 +932,22 @@ LOCATION:SH-2
 DESCRIPTION:Section: S4\nCode: S4-C3-RAS\nSession: 20\nFaculty: Madhumita M
 END:VEVENT
 BEGIN:VEVENT
-UID:9e2727da9e28c454e97af25eb3e09c95342543a7@mica-ics-feed
+UID:602ce4191fc523c19b4aad13710f924a373376c7@mica-ics-feed
 DTSTAMP:20261030T101500Z
 DTSTART:20261030T101500Z
 DTEND:20261030T113000Z
-SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 3
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 9\nFaculty: Khushboo B
 END:VEVENT
 BEGIN:VEVENT
-UID:0b05ac36c88522fdaa4f7fb5055431f1e1a0cddb@mica-ics-feed
+UID:457c83401580e1cc31bc9dc46ae697fcd660babe@mica-ics-feed
 DTSTAMP:20261030T120000Z
 DTSTART:20261030T120000Z
 DTEND:20261030T131500Z
-SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 4
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 10\nFaculty: Khushboo B
 END:VEVENT
 BEGIN:VEVENT
 UID:a29366d39ca028c6ebac5accf7a2244a3c74c277@mica-ics-feed
@@ -968,7 +976,8 @@ DTSTART:20261101T064500Z
 DTEND:20261101T080000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 5\nFaculty: Akash A
+DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 11\nFaculty: Akash 
+ A
 END:VEVENT
 BEGIN:VEVENT
 UID:6eb00a6efb1e0c8cfde17064d218a8f1ad260be0@mica-ics-feed
@@ -977,25 +986,26 @@ DTSTART:20261101T084500Z
 DTEND:20261101T100000Z
 SUMMARY:[S2] Media Process & KPIs\, Platform Analytics.
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 6\nFaculty: Akash A
+DESCRIPTION:Section: S2\nCode: S2-C3-MPKPISPA\nSession: 12\nFaculty: Akash 
+ A
 END:VEVENT
 BEGIN:VEVENT
-UID:97537748ef7460e9dc91565bda8146d4a301277d@mica-ics-feed
+UID:6b92c3e8c4c80ba330b201fdac99143be59f8ade@mica-ics-feed
 DTSTAMP:20261102T101500Z
 DTSTART:20261102T101500Z
 DTEND:20261102T113000Z
-SUMMARY:[S2] Gaming & Immersive Media Businesses
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 7
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 11\nFaculty: Khushboo B
 END:VEVENT
 BEGIN:VEVENT
-UID:abf84832ceae59d21632ba3f75d55d99df80e4ae@mica-ics-feed
+UID:ddf0cde3d47d1944f982e242f361775651f14e70@mica-ics-feed
 DTSTAMP:20261102T120000Z
 DTSTART:20261102T120000Z
 DTEND:20261102T131500Z
-SUMMARY:[S2] Gaming & Immersive Media Businesses
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 8
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 12\nFaculty: Khushboo B
 END:VEVENT
 BEGIN:VEVENT
 UID:69947ad369724b0a8261272b7167d9252b835ce2@mica-ics-feed
@@ -1004,7 +1014,7 @@ DTSTART:20261103T101500Z
 DTEND:20261103T113000Z
 SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 7\nFaculty: Vinit K
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 13\nFaculty: Vinit K
 END:VEVENT
 BEGIN:VEVENT
 UID:2273f48365c94637a92b453bd9ffd3776a4ac652@mica-ics-feed
@@ -1013,7 +1023,7 @@ DTSTART:20261103T120000Z
 DTEND:20261103T131500Z
 SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 8\nFaculty: Vinit K
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 14\nFaculty: Vinit K
 END:VEVENT
 BEGIN:VEVENT
 UID:a0abf28429e1f991c37ea9973b12706980c8da61@mica-ics-feed
@@ -1062,7 +1072,7 @@ DTSTART:20261104T133000Z
 DTEND:20261104T144500Z
 SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 9\nFaculty: Vinit K
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 15\nFaculty: Vinit K
 END:VEVENT
 BEGIN:VEVENT
 UID:3e1a561419ae1ebfc8094fcd31e3540c6dc33f95@mica-ics-feed
@@ -1071,6 +1081,6 @@ DTSTART:20261104T153000Z
 DTEND:20261104T164500Z
 SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 10\nFaculty: Vinit K
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 16\nFaculty: Vinit K
 END:VEVENT
 END:VCALENDAR
