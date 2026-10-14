@@ -494,8 +494,8 @@ DTSTART:20261014T133000Z
 DTEND:20261014T144500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
-DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 13\nFaculty: Priyaranjan 
- K Audi
+DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 2\nFaculty: Priyaranjan K
+  SH
 END:VEVENT
 BEGIN:VEVENT
 UID:37cfd2e28a0e0fa3e24774735765425498e29bbe@mica-ics-feed
@@ -504,8 +504,8 @@ DTSTART:20261014T153000Z
 DTEND:20261014T164500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:Audi
-DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 14\nFaculty: Priyaranjan 
- K Audi
+DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 2\nFaculty: Priyaranjan K
+  SH
 END:VEVENT
 BEGIN:VEVENT
 UID:63e4a3188b2ff0b6d6c92d334cb74606878abe40@mica-ics-feed
