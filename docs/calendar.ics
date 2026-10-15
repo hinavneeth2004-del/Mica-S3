@@ -820,22 +820,22 @@ LOCATION:SH-2
 DESCRIPTION:Section: S4\nCode: S4-C3-RAS\nSession: 14\nFaculty: Madhumita M
 END:VEVENT
 BEGIN:VEVENT
-UID:a74d046f63da14352b49fba7bd2adc0884d87619@mica-ics-feed
+UID:635a029b7e7fc29928e867bbeb6be81f86df469b@mica-ics-feed
 DTSTAMP:20261027T133000Z
 DTSTART:20261027T133000Z
 DTEND:20261027T144500Z
-SUMMARY:[S2] Content & Platform Business (Projects)
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 15\nFaculty: Neale M
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 9\nFaculty: Khushboo B
 END:VEVENT
 BEGIN:VEVENT
-UID:183f41f0184b8b3ded09635a7826a49e376de8e5@mica-ics-feed
+UID:389fd4c8861a0769de463117abcd395d4565e3f3@mica-ics-feed
 DTSTAMP:20261027T153000Z
 DTSTART:20261027T153000Z
 DTEND:20261027T164500Z
-SUMMARY:[S2] Content & Platform Business (Projects)
+SUMMARY:[S2] Business of Sports Marketing
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 16\nFaculty: Neale M
+DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 10\nFaculty: Khushboo B
 END:VEVENT
 BEGIN:VEVENT
 UID:559cedc49f0248699151ac4f7f08c7690444b66f@mica-ics-feed
@@ -932,22 +932,22 @@ LOCATION:SH-2
 DESCRIPTION:Section: S4\nCode: S4-C3-RAS\nSession: 20\nFaculty: Madhumita M
 END:VEVENT
 BEGIN:VEVENT
-UID:602ce4191fc523c19b4aad13710f924a373376c7@mica-ics-feed
+UID:2d2726e50e688e046835af04dfa321eeacf87457@mica-ics-feed
 DTSTAMP:20261030T101500Z
 DTSTART:20261030T101500Z
 DTEND:20261030T113000Z
-SUMMARY:[S2] Business of Sports Marketing
+SUMMARY:[S2] Content & Platform Business (Projects)
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 9\nFaculty: Khushboo B
+DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 15\nFaculty: Neale M
 END:VEVENT
 BEGIN:VEVENT
-UID:457c83401580e1cc31bc9dc46ae697fcd660babe@mica-ics-feed
+UID:a9a01884e5029d3085e3f2a2e4e22a43a19e9c86@mica-ics-feed
 DTSTAMP:20261030T120000Z
 DTSTART:20261030T120000Z
 DTEND:20261030T131500Z
-SUMMARY:[S2] Business of Sports Marketing
+SUMMARY:[S2] Content & Platform Business (Projects)
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C2-BSM\nSession: 10\nFaculty: Khushboo B
+DESCRIPTION:Section: S2\nCode: S2-C1-CPB\nSession: 16\nFaculty: Neale M
 END:VEVENT
 BEGIN:VEVENT
 UID:a29366d39ca028c6ebac5accf7a2244a3c74c277@mica-ics-feed
