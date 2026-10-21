@@ -708,8 +708,8 @@ DTSTART:20261023T120000Z
 DTEND:20261023T131500Z
 SUMMARY:[S4] Retail Operations
 LOCATION:SH-2
-DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 18\nFaculty: Priyaranjan 
- K
+DESCRIPTION:Section: S4\nCode: S4-C2-RO\nSession: 00\nFaculty: Priyaranjan 
+ K . PM- : PM
 END:VEVENT
 BEGIN:VEVENT
 UID:37379c2666459ce66695dcbbe1e481f50027a1ab@mica-ics-feed
@@ -718,7 +718,8 @@ DTSTART:20261023T133000Z
 DTEND:20261023T144500Z
 SUMMARY:[S2] Gaming & Immersive Media Businesses
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 7\nFaculty: Karan G
+DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 30\nFaculty: Karan G : 
+ PM - : PM
 END:VEVENT
 BEGIN:VEVENT
 UID:54bffd0607837cc8d26227aeb716822152db08a3@mica-ics-feed
@@ -727,7 +728,8 @@ DTSTART:20261023T153000Z
 DTEND:20261023T164500Z
 SUMMARY:[S2] Gaming & Immersive Media Businesses
 LOCATION:SH-2
-DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 8\nFaculty: Karan G
+DESCRIPTION:Section: S2\nCode: S2-C4-GIMB\nSession: 30\nFaculty: Karan G : 
+ pm - : PM
 END:VEVENT
 BEGIN:VEVENT
 UID:be13b89b3b91fedd2afd25f63fedcbc7679fb472@mica-ics-feed
